@@ -13,7 +13,6 @@ def palindromo()
 		end
 	end
 	puts palindromo
-
 end
 
 palindromo()
