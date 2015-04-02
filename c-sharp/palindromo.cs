@@ -3,7 +3,7 @@ using System.IO;
 
 class Palindromo {
 	public static void Main() {
-		string texto = leerArchivo("../string.txt");
+		string texto = LeerArchivo("../string.txt");
 		string palindromo = "";
 
 		/* Recorriendo el String */
@@ -17,7 +17,7 @@ class Palindromo {
 					string fragmento = texto.Substring(j, i);
 
 					/* Chequear el Mayor Palíndromo */
-					if(checkPalindromo(fragmento) && fragmento.Length > palindromo.Length) {
+					if(CheckPalindromo(fragmento) && fragmento.Length > palindromo.Length) {
 						palindromo = fragmento;
 					}
 				}
@@ -28,12 +28,12 @@ class Palindromo {
 		Console.WriteLine(palindromo);
 	}
 
-	public static string leerArchivo(String txt) {
+	public static string LeerArchivo(String txt) {
 		StreamReader r = new StreamReader(txt);
 		return r.ReadLine();
 	}
 
-	public static bool checkPalindromo(String txt) {
+	public static bool CheckPalindromo(String txt) {
 		/* Obtener Mitad Original */
 		string mitadTexto = txt.Substring(0, txt.Length / 2);
 		char[] arr = txt.ToCharArray();
