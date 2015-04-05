@@ -22,7 +22,6 @@ public class triangulo {
 		try {
 			String ruta = "../triangle.txt";
 			String linea;
-			String[] fragmentos;
 
 			ArrayList<String[]> lineas = new ArrayList<String[]>();
 
