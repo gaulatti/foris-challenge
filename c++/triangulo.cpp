@@ -16,7 +16,7 @@ int main () {
 
 		string lineaActual;
 		int triangulo [preTriangulo.size()][preTriangulo.size()];
-		
+
 		for(int i = 0; i < preTriangulo.size(); i = i+1){
 			lineaActual = preTriangulo.at(i);
 			for(int j = 0; j <= i; j = j + 1) {

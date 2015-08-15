@@ -8,7 +8,7 @@ def triangulo():
 	for i in range(len(lineas)):
 		items = lineas[i].split(' ')
 		triangulo.append(items)
-	
+
 	triangulo.pop(0)
 
 	for j in reversed(range(0, len(triangulo) - 1)):

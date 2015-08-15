@@ -12,7 +12,7 @@ function palindromo() {
 						palindromo = fragmento;
 					}
 				}
-			}	
+			}
 		}
 		console.info(palindromo);
 	});

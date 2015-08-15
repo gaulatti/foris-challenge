@@ -8,7 +8,7 @@ def fibonacci():
 			print a
 			return
 
-def factors(n):    
+def factors(n):
     return len(set(reduce(list.__add__, ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0))))
 
 fibonacci()

@@ -2,8 +2,8 @@ function triangulo() {
 	fs = require('fs')
 	fs.readFile('../triangle.txt', 'utf8', function (err,data) {
 		if (err) { return console.log(err); }
-		triangulo = data.split("\n").map(function(x) { 
-			return x.split(" ").map(function(y) { return parseInt(y);}); 
+		triangulo = data.split("\n").map(function(x) {
+			return x.split(" ").map(function(y) { return parseInt(y);});
 		});
 		triangulo.pop();
 

@@ -10,7 +10,7 @@ def triangulo()
 
 	rango = triangulo.length - 2..0
 
-	(rango.first).downto(rango.last).each { |i| 
+	(rango.first).downto(rango.last).each { |i|
 		for j in 0..i + 1
 			triangulo[i][j] = triangulo[i][j].to_i + [triangulo[i+1][j].to_i, triangulo[i+1][j+1].to_i].max
 		end

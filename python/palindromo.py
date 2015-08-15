@@ -12,5 +12,5 @@ def palindromo():
 
 	print(palindromo)
 	return
-	
+
 palindromo()

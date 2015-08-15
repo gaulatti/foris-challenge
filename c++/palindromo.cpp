@@ -13,7 +13,7 @@ int main () {
 	if (archivo.is_open())
 	{
 		getline(archivo,texto);
-		string palindromo; 
+		string palindromo;
 		for(int i = 2; i < texto.size(); i = i+1) {
 				for(int j = 0; j < texto.size(); j = j+1) {
 					if(j + i <= texto.size()) {
@@ -22,14 +22,14 @@ int main () {
 							palindromo = fragmento;
 						}
 					}
-				}	
+				}
 			}
 
 		cout << palindromo;
 		archivo.close();
 	}
 
-	else cout << "Houston! No puedo abrir el txt"; 
+	else cout << "Houston! No puedo abrir el txt";
 
 	return 0;
 }

@@ -16,7 +16,7 @@ public class triangulo {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
-	}	
+	}
 
 	public static int[][] leerArchivo() {
 		try {

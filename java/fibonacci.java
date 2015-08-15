@@ -12,7 +12,7 @@ public class fibonacci {
 				return;
 			}
 		}
-	}	
+	}
 
 	public static int factores(int numero) {
 		ArrayList<Integer> divisores = new ArrayList<Integer>();

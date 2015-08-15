@@ -21,7 +21,7 @@ public class palindromo {
 							palindromo = fragmento;
 						}
 					}
-				}	
+				}
 			}
 
 			System.out.println(palindromo);
@@ -30,7 +30,7 @@ public class palindromo {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
-	}	
+	}
 
 	public static boolean checkPalindromo(String texto) {
 

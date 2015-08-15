@@ -21,7 +21,7 @@ class Palindromo {
 						palindromo = fragmento;
 					}
 				}
-			}	
+			}
 		}
 
 		/* Y por lo tanto? */
