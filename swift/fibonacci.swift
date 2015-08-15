@@ -13,8 +13,7 @@ func fibonacci() {
 }
 
 func factores(num: Double) -> Int {
-    var divisores = [Double]()
-    var n: Double = 1
+    var divisores = [Double](); var n: Double = 1
     while(n <= sqrt(num)) {
         if(num % n == 0) {
             divisores.append(n)
