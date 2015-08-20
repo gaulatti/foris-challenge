@@ -14,11 +14,17 @@ func palindromo() {
     let str = NSString(contentsOfFile: file, encoding: NSUTF8StringEncoding, error: nil) as! String
     let length = count(str)
     var palindromoActual: String = ""
-    for i in 0...length {
-        for character in str.subStringWithRange() {
-
+    for i in 2...length {
+        for j in 0...length {
+            if (j + i) <= length {
+                var fragmento = str[i..<(i+j)]
+                if(palindromo(fragmento)) {
+                    println(fragmento)
+                }
+            }
         }
     }
+
 
     println(palindromoActual)
 }
