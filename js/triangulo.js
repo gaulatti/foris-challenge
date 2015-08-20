@@ -5,7 +5,6 @@ function triangulo() {
 		triangulo = data.split("\n").map(function(x) {
 			return x.split(" ").map(function(y) { return parseInt(y);});
 		});
-		triangulo.pop();
 
 		for(i = triangulo.length - 2; i >= 0; i--) {
 			for(j = 0; j <= i; j++) {
