@@ -5,7 +5,6 @@ public class triangulo {
 		try {
 			int[][] triangulo = leerArchivo();
 			int lineas = triangulo.length;
-
 			for(int i = lineas - 2; i >= 0; i--) {
 				for(int j = 0; j <= i; j++) {
 					triangulo[i][j] += Math.max(triangulo[i+1][j], triangulo[i+1][j+1]);
@@ -20,16 +19,12 @@ public class triangulo {
 
 	public static int[][] leerArchivo() {
 		try {
-			String ruta = "../triangle.txt";
 			String linea;
-
 			ArrayList<String[]> lineas = new ArrayList<String[]>();
-
-			BufferedReader archivo = new BufferedReader(new FileReader(ruta));
+			BufferedReader archivo = new BufferedReader(new FileReader("../triangle.txt"));
 			while((linea = archivo.readLine()) != null) {
 				lineas.add(linea.split(" "));
 			}
-
 			int[][] triangulo = new int[lineas.size()][lineas.size()];
 			for(int j = 0; j < lineas.size(); j++) {
 				for(int i = 0; i <= j; i++) {

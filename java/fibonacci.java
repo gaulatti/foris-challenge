@@ -4,7 +4,6 @@ import java.util.*;
 public class fibonacci {
 	public static void main(String[] args) {
 		int a = 1, b = 1, temp = 0;
-
 		while(true) {
 			temp = a; a = b; b = temp + b;
 			if(factores(a) >= 1000) {
